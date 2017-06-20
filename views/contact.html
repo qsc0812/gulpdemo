@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>家私家具</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <span>Furniture Design</span>
+        </div>
+        <div class="nav-bar">
+            <ul class="clearfix">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./aboutus.html">关于我们</a></li>
+                <li><a href="./product.html">产品展示</a></li>
+                <li><a href="./news.html">行业资讯</a></li>
+                <li class="active"><a href="./contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="top-img">
+            <img src="../images/6.jpg" alt="">
+        </div>
+        <div class="contact-us clearfix">
+            <ul class="title">
+                <li>联系我们</li>
+            </ul>
+            <div class="left-part">
+                <div class="map" id="map">
+                    
+                </div>
+            </div>
+            <div class="right-part">
+                <p>申请城市合伙人</p>
+                <p>
+                    如果，您同样看好家私家具行业广阔前景<br>
+                    请注明您要合伙的城市<br>
+                    期待与您牵手，联系方式<br>
+                </p>
+                <p class="contact">联系QQ：258506508&nbsp;&nbsp;&nbsp;手机号码：130000000</p>
+                <p class="contact">联系邮箱：contact@fkadjkhsf.co</p>
+                <p class="contact">联系电话：020-000000    400-000000</p>
+                <p class="contact">联系地址：XXX省XXX市XXX县XXX路XXX号</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        2017 网站模板-家私家具 版权所有
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/googlemap.js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+    <script>
+		function initialize()
+		{
+			var myCenter=new google.maps.LatLng(28.722738 , 115.82852600000001);
+			var mapProp = {
+				center:myCenter,
+				zoom:15
+			};
+			var map=new google.maps.Map(document.getElementById("map"),mapProp);
+			marker=new google.maps.Marker({
+				position:myCenter,
+				animation:google.maps.Animation.BOUNCE
+			});
+			marker.setMap(map);
+			var infowindow = new google.maps.InfoWindow({
+				content:"Hello World!"
+			});
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map,marker);
+			});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "microsoft yahei";
+}
+body .header {
+  width: 100%;
+  height: 220px;
+  background: #fff;
+}
+body .header .title {
+  height: 120px;
+  background: #CA0000;
+}
+body .header .title span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 120px;
+}
+body .header .nav-bar {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+}
+body .header .nav-bar ul {
+  margin: 30px 0px 0px 0px;
+}
+body .header .nav-bar ul li {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  float: left;
+}
+body .header .nav-bar ul li.active {
+  background: #c40000;
+  border-radius: 20px;
+}
+body .header .nav-bar ul li.active a {
+  color: #fff;
+}
+body .header .nav-bar ul li a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+body .main {
+  width: 960px;
+  margin: 0 auto;
+}
+body .main .top-img {
+  width: 960px;
+  height: 450px;
+}
+body .main .top-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+body .main .news-content .title {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  color: #c40000;
+  border-bottom: 1px solid #eaeaea;
+}
+body .main .news-content .title li {
+  display: inline-block;
+  border-bottom: 1px solid #c40000;
+}
+body .main .news-content .news-list {
+  width: 100%;
+}
+body .main .news-content .news-list ul li {
+  margin-top: 20px;
+}
+body .main .news-content .news-list ul li .left-part {
+  width: 84px;
+  height: 84px;
+  float: left;
+  background: #f2f2f2;
+}
+body .main .news-content .news-list ul li .left-part .day {
+  color: #666666;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+}
+body .main .news-content .news-list ul li .left-part .date {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #666666;
+  margin: 3px 0px 0px 0px;
+}
+body .main .news-content .news-list ul li .right-part {
+  width: 850px;
+  height: 84px;
+  margin-left: 6px;
+  float: left;
+  overflow: hidden;
+}
+body .main .news-content .news-list ul li .right-part h3 {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+body .main .news-content .news-list ul li .right-part p {
+  font-size: 14px;
+  color: #666666;
+}
+body .footer {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #646464;
+  text-align: center;
+  background: #333;
+}

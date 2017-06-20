@@ -1,0 +1,125 @@
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "microsoft yahei";
+}
+body .header {
+  width: 100%;
+  height: 220px;
+  background: #fff;
+}
+body .header .title {
+  height: 120px;
+  background: #CA0000;
+}
+body .header .title span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 120px;
+}
+body .header .nav-bar {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+}
+body .header .nav-bar ul {
+  margin: 30px 0px 0px 0px;
+}
+body .header .nav-bar ul li {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  float: left;
+}
+body .header .nav-bar ul li.active {
+  background: #c40000;
+  border-radius: 20px;
+}
+body .header .nav-bar ul li.active a {
+  color: #fff;
+}
+body .header .nav-bar ul li a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+body .main {
+  width: 960px;
+  margin: 0 auto;
+}
+body .main .top-img {
+  width: 960px;
+  height: 450px;
+}
+body .main .top-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+body .main .contact-us .title {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  color: #c40000;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+body .main .contact-us .title li {
+  display: inline-block;
+  border-bottom: 1px solid #c40000;
+}
+body .main .contact-us .left-part {
+  width: 480px;
+  height: 300px;
+  float: left;
+}
+body .main .contact-us .left-part .map {
+  width: 100%;
+  height: 100%;
+}
+body .main .contact-us .right-part {
+  width: 400px;
+  height: 300px;
+  padding: 0px 40px;
+  float: left;
+  overflow: hidden;
+}
+body .main .contact-us .right-part p {
+  font-size: 14px;
+  color: #666;
+  line-height: 25px;
+}
+body .main .contact-us .right-part p.contact {
+  margin: 0;
+}
+body .footer {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #646464;
+  text-align: center;
+  background: #333;
+}
